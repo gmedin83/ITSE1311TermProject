@@ -6,7 +6,7 @@
     --accent-warm: #fbb13c;      /* Honey Bronze */
     --accent-light: #73d2de;     /* Frosted Blue */
     --bg-light: #f0f0f0;
-    --shadow: rgba(0, 0, 0, 2);
+    --shadow: rgba(0, 0, 0, 0.2);
 }
 
 /*Reset Selector*/
@@ -46,17 +46,6 @@ header {
 header h1 {
     margin: 0;
     font-size: 1.8em;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 1.5em;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: var(--accent-light);
 }
 
 .slogan {
@@ -140,6 +129,7 @@ footer {
 		padding: 1em;
 		text-decoration: none;
         color: var(--accent-light);
+        margin-left: 1.5em;
         font-weight: bold;
 		margin: 0 2px 2px 0;
 	}
@@ -166,7 +156,7 @@ footer {
 .menu-btn {                                
     display: block;
     padding: 1em;
-    color: var(--light_menu); 
+    color: var(--accent-warm); 
 }
 .menu-btn::after { 
     content: "\2630";
