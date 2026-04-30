@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPUs — Signal Computer Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/logoSCG.png" type="image/png">
+    <link rel="stylesheet" href="../styles/main.css"> 
+    <link rel="stylesheet" href="../styles/products.css">
+</head>
+<body>
+    <header>
+        <img src="../images/logoSCG.png" alt="Signal Computer Group logo">
+        <h1>Signal Computer Group</h1>
+         <nav class="navbar">
+                <input type="checkbox" id="checkbox-toggle" />
+    	        <label for="checkbox-toggle" class="menu-btn"></label>
+        <ul class="menu"> 
+                <li><a href="../index.html">Home</a></li>
+                 <li><a href="cpu.html">CPUs<small></small></a>
+				    <ul class="submenu">
+                        <li><a href="#">Intel</a></li>
+                        <li><a href="#">AMD</a></li>
+				    </ul>
+                </li>
+                <li><a class="current" href="gpu.html">GPUs<small></small></a>
+                    <ul class="submenu">
+                        <li><a href="#">NVIDIA</a></li>
+                        <li><a href="#">AMD</a></li>
+                    </ul>
+                </li>
+                <li><a href="storage.html">Storage</a></li>
+                <li><a href="ram.html">RAM</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="slogan">
+        <h2>Graphics Cards</h2>
+        <p>NVIDIA and AMD GPUs for every build and budget.</p>
+    </section>
+ 
+    <div class="page-layout">
+ 
+        <div class="sidebar">
+            <h2>Filter</h2>
+ 
+            <h3>Brand</h3>
+            <label><input type="checkbox" checked> NVIDIA</label>
+            <label><input type="checkbox" checked> AMD</label>
+            <label><input type="checkbox" checked> Intel</label>
+ 
+            <h3>Max Price</h3>
+            <input type="range" min="100" max="2000" value="2000" step="50">
+ 
+            <h3>VRAM</h3>
+            <label><input type="checkbox" checked> 8 GB</label>
+            <label><input type="checkbox" checked> 12 GB</label>
+            <label><input type="checkbox" checked> 16 GB</label>
+            <label><input type="checkbox" checked> 24 GB</label>
+ 
+            <button>Reset Filters</button>
+        </div>
+
+    <div class="product-grid">
+              <div class="product-card">
+                <img src="../images/5060GPU.jpg" alt="NVIDIA RTX 5060 graphics card">
+                <h3>NVIDIA RTX 5060</h3>
+                <p>8 GB GDDR6X · DLSS 3 · 200W TDP</p>
+                <p class="price">$449.99</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product-card">
+                <img src="../images/5070GPU.jpg" alt="NVIDIA RTX 5070 graphics card">
+                <h3>NVIDIA RTX 5070</h3>
+                <p>12 GB GDDR7 · DLSS 4 · 250W TDP</p>
+                <p class="price">$635.99</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product-card">
+                <img src="../images/5080GPU.jpg" alt="NVIDIA RTX 5080 graphics card">
+                <h3>NVIDIA RTX 5080</h3>
+                <p>16 GB GDDR7 · DLSS 4 · 360W TDP</p>
+                <p class="price">$999.99</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product-card">
+                <img src="../images/9060GPU.jpg" alt="AMD Radeon RX 9060 XT 8gb graphics card">
+                <h3>AMD Radeon RX 9060 XT 8gb</h3>
+                <p>8 GB GDDR6 · FSR 3 · 165W TDP</p>
+                <p class="price">$269.99</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product-card">
+                <img src="../images/9060XTGPU.jpg" alt="AMD Radeon RX 9060 XT 16 gb graphics card">
+                <h3>AMD Radeon RX 9060 XT 16gb</h3>
+                <p>16 GB GDDR6 · FSR 3 · 263W TDP</p>
+                <p class="price">$479.99</p>
+                <button>Add to Cart</button>
+            </div>
+ 
+            <div class="product-card">
+                <img src="../images/9070XTGPU.jpg" alt="AMD Radeon RX 9070 XT graphics card">
+                <h3>AMD Radeon RX 9070 XT</h3>
+                <p>24 GB GDDR6 · FSR 3 · 355W TDP</p>
+                <p class="price">$899.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+ 
+    </div>
+ 
+    <footer>
+        &copy; 2026 Signal Computer Group
+    </footer>
+</body>
+</html>
