@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us — Signal Computer Group</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/logoSCG.png" type="image/png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="images/logoSCG.png" alt="Signal Computer Group logo">
+        <h1>Signal Computer Group</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parts/cpu.html">CPUs<small></small></a>
+				    <ul class="submenu">
+                        <li><a href="intelcpu.html">Intel</a></li>
+                        <li><a href="amdcpu.html">AMD</a></li>
+				    </ul>
+                </li>
+                <li><a href="parts/gpu.html">GPUs<small></small></a>
+                    <ul class="submenu">
+                        <li><a href="nvidiagpu.html">NVIDIA</a></li>
+                        <li><a href="amdgpu.html">AMD</a></li>
+                    </ul>
+                </li>
+                <li><a href="parts/storage.html">Storage</a></li>
+                <li><a href="parts/ram.html">RAM</a></li>
+                <li><a class="current" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slogan">
+            <h2>Contact Us</h2>
+            <p>We're here to help with any questions about products, orders, or support.</p>
+        </section>
+
+        <div class="contact-wrapper">
+
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p class="tagline">Our team is available Monday through Saturday to assist with product recommendations, 
+                    order status, and technical support.</p>
+
+                <div class="info-block">
+                    <div class="info-text">
+                        <strong>Address</strong>
+                        <span>919 Hunter Dr, <br>El Paso, TX 79915</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-text">
+                        <strong>Phone:</strong>
+                        <span>(915) 745-9492</span>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="info-text">
+                        <strong>Email:</strong>
+                        <span>support@signalcomputergroup.com</span>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <p class="hours-title">Business Hours:</p>
+                <div class="hours-row"><span>Monday - Friday</span><span>9:00 AM - 8:00 PM</span></div>
+                <div class="hours-row"><span>Saturday</span><span>10:00 AM - 6:00 PM</span></div>
+                <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+            </div>
+
+            <form class="contact-form-card" action="contact_submit.html" method="post">
+                <h2>Send a Message</h2>
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" autofocus required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="999-999-9999"
+                           pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                           title="Must be 999-999-9999 format">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a topic…</option>
+                        <option value="recommendation">Product Recommendation</option>
+                        <option value="order">Order Status</option>
+                        <option value="returns">Returns &amp; Exchanges</option>
+                        <option value="support">Technical Support</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                </fieldset>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 Signal Computer Group
+    </footer>
+</body>
+</html>
