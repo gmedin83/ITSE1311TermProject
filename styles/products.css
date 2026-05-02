@@ -33,6 +33,16 @@
 .sidebar button {
     width: 100%;
     margin-top: 1em;
+&a {	display: block;
+		padding: 1em;
+		text-decoration: none;
+        color: var(--accent-light);
+        margin-left: 1.5em;
+        font-weight: bold;
+		margin: 0 2px 2px 0;}
+&a:link, a:visited {
+		color: white;
+	}
 }
 
 /* Product Grid */
