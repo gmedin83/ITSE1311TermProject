@@ -45,7 +45,16 @@
 	}
 }
 
-/* Product Grid */
+.filter-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .95em;
+}
+ 
+.filter-btn:hover { color: var(--accent-primary); }
+
 .product-grid {
     flex: 1;
     display: grid;
