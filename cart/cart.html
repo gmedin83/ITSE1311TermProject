@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
- 
 <head>
     <meta charset="UTF-8">
     <title>Cart - Signal Computer Group</title>
@@ -9,146 +8,137 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/cart.css">
 </head>
- 
 <body>
- 
-<header>
-    <img src="../images/logoSCG.png" alt="Signal Computer Group logo">
-    <h1>Signal Computer Group</h1>
-    <nav class="navbar">
-        <input type="checkbox" id="checkbox-toggle" />
-        <label for="checkbox-toggle" class="menu-btn"></label>
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../parts/cpu.html">CPUs</a>
-                <ul class="submenu">
-                    <li><a href="../parts/intelcpu.html">Intel</a></li>
-                    <li><a href="../parts/amdcpu.html">AMD</a></li>
-                </ul>
-            </li>
-            <li><a href="../parts/gpu.html">GPUs</a>
-                <ul class="submenu">
-                    <li><a href="../parts/nvidiagpu.html">NVIDIA</a></li>
-                    <li><a href="../parts/amdgpu.html">AMD</a></li>
-                </ul>
-            </li>
-            <li><a href="../parts/storage.html">Storage</a></li>
-            <li><a href="../parts/ram.html">RAM</a></li>
-            <li><a href="../contact/contact.html">Contact</a></li>
-            <li><a class="current" href="cart.html"><img src="../images/carticon.png" alt="Shopping Cart"></a></li>
-        </ul>
-    </nav>
-</header>
- 
-<div class="cart-container">
-    <h2>Your Cart</h2>
- 
-    <table class="cart-table">
-        <thead>
-            <tr>
-                <th>Item</th>
-                <th>Product</th>
-                <th>Unit Price</th>
-                <th>Qty</th>
-                <th>Subtotal</th>
-                <th>Remove</th>
-            </tr>
-        </thead>
-        <tbody>
- 
-            <tr>
-                <td data-label="Item">
-                    <img class="item-img" src="../images/5800xCPU.jpg" alt="AMD Ryzen 7 5800X">
-                </td>
-                <td data-label="Product">
-                    <div class="item-name">AMD Ryzen 7 5800X</div>
-                    <div class="item-sub">8-Core / 16-Thread</div>
-                </td>
-                <td data-label="Unit Price" class="item-price">$249.99</td>
-                <td data-label="Qty">
-                    <div class="qty">
-                        <span class="qty-btn">-</span>
-                        <span>1</span>
-                        <span class="qty-btn">+</span>
+    <header>
+        <img src="../images/logoSCG.png" alt="Signal Computer Group logo">
+        <h1>Signal Computer Group</h1>
+        <nav class="navbar">
+            <input type="checkbox" id="checkbox-toggle" />
+            <label for="checkbox-toggle" class="menu-btn"></label>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../parts/cpu.html">CPUs</a>
+                    <ul class="submenu">
+                        <li><a href="../parts/intelcpu.html">Intel</a></li>
+                        <li><a href="../parts/amdcpu.html">AMD</a></li>
+                    </ul>
+                </li>
+                <li><a href="../parts/gpu.html">GPUs</a>
+                    <ul class="submenu">
+                        <li><a href="../parts/nvidiagpu.html">NVIDIA</a></li>
+                        <li><a href="../parts/amdgpu.html">AMD</a></li>
+                    </ul>
+                </li>
+                <li><a href="../parts/storage.html">Storage</a></li>
+                <li><a href="../parts/ram.html">RAM</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a class="cart-link" href="cart.html"><img src="../images/carticon.png" alt="Shopping Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>Your Cart</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Product</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Item">
+                            <img class="item-img" src="../images/5800xCPU.jpg" alt="AMD Ryzen 7 5800X">
+                        </td>
+                        <td data-label="Product">
+                            <div class="item-name">AMD Ryzen 7 5800X</div>
+                            <div class="item-sub">8-Core / 16-Thread</div>
+                        </td>
+                        <td data-label="Unit Price" class="item-price">$249.99</td>
+                        <td data-label="Qty">
+                            <div class="qty">
+                                <span class="qty-btn">-</span>
+                                <span>1</span>
+                                <span class="qty-btn">+</span>
+                            </div>
+                        </td>
+                        <td data-label="Subtotal" class="item-price">$249.99</td>
+                        <td data-label="Remove"><button class="remove-btn">✕</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Item">
+                            <img class="item-img" src="../images/5070GPU.jpg" alt="NVIDIA RTX 5070">
+                        </td>
+                        <td data-label="Product">
+                            <div class="item-name">NVIDIA RTX 5070</div>
+                            <div class="item-sub">12 GB GDDR7</div>
+                        </td>
+                        <td data-label="Unit Price" class="item-price">$635.99</td>
+                        <td data-label="Qty">
+                            <div class="qty">
+                                <span class="qty-btn">-</span>
+                                <span>1</span>
+                                <span class="qty-btn">+</span>
+                            </div>
+                        </td>
+                        <td data-label="Subtotal" class="item-price">$635.99</td>
+                        <td data-label="Remove"><button class="remove-btn">✕</button></td>
+                    </tr>
+                    <tr>
+                        <td data-label="Item">
+                            <img class="item-img" src="../images/ddr5RAM.jpg" alt="Corsair Vengeance DDR5 32GB">
+                        </td>
+                        <td data-label="Product">
+                            <div class="item-name">Corsair Vengeance 32GB DDR5</div>
+                            <div class="item-sub">2x16 GB / 5600 MHz</div>
+                        </td>
+                        <td data-label="Unit Price" class="item-price">$69.99</td>
+                        <td data-label="Qty">
+                            <div class="qty">
+                                <span class="qty-btn">-</span>
+                                <span>2</span>
+                                <span class="qty-btn">+</span>
+                            </div>
+                        </td>
+                        <td data-label="Subtotal" class="item-price">$139.98</td>
+                        <td data-label="Remove"><button class="remove-btn">✕</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <div class="summary-box">
+                    <h3>Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (4 items)</span>
+                        <span>$1,025.96</span>
                     </div>
-                </td>
-                <td data-label="Subtotal" class="item-price">$249.99</td>
-                <td data-label="Remove"><button class="remove-btn">✕</button></td>
-            </tr>
- 
-            <tr>
-                <td data-label="Item">
-                    <img class="item-img" src="../images/5070GPU.jpg" alt="NVIDIA RTX 5070">
-                </td>
-                <td data-label="Product">
-                    <div class="item-name">NVIDIA RTX 5070</div>
-                    <div class="item-sub">12 GB GDDR7</div>
-                </td>
-                <td data-label="Unit Price" class="item-price">$635.99</td>
-                <td data-label="Qty">
-                    <div class="qty">
-                        <span class="qty-btn">-</span>
-                        <span>1</span>
-                        <span class="qty-btn">+</span>
+                    <div class="summary-row">
+                        <span>Shipping</span>
+                        <span>Free</span>
                     </div>
-                </td>
-                <td data-label="Subtotal" class="item-price">$635.99</td>
-                <td data-label="Remove"><button class="remove-btn">✕</button></td>
-            </tr>
- 
-            <tr>
-                <td data-label="Item">
-                    <img class="item-img" src="../images/ddr5RAM.jpg" alt="Corsair Vengeance DDR5 32GB">
-                </td>
-                <td data-label="Product">
-                    <div class="item-name">Corsair Vengeance 32GB DDR5</div>
-                    <div class="item-sub">2x16 GB / 5600 MHz</div>
-                </td>
-                <td data-label="Unit Price" class="item-price">$69.99</td>
-                <td data-label="Qty">
-                    <div class="qty">
-                        <span class="qty-btn">-</span>
-                        <span>2</span>
-                        <span class="qty-btn">+</span>
+                    <div class="summary-row">
+                        <span>Estimated Tax (8.25%)</span>
+                        <span>$84.64</span>
                     </div>
-                </td>
-                <td data-label="Subtotal" class="item-price">$139.98</td>
-                <td data-label="Remove"><button class="remove-btn">✕</button></td>
-            </tr>
- 
-        </tbody>
-    </table>
- 
-    <div class="cart-summary">
-        <div class="summary-box">
-            <h3>Order Summary</h3>
-            <div class="summary-row">
-                <span>Subtotal (4 items)</span>
-                <span>$1,025.96</span>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span>$1,110.60</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout →</button>
+                </div>
             </div>
-            <div class="summary-row">
-                <span>Shipping</span>
-                <span>Free</span>
-            </div>
-            <div class="summary-row">
-                <span>Estimated Tax (8.25%)</span>
-                <span>$84.64</span>
-            </div>
-            <div class="summary-row total">
-                <span>Total</span>
-                <span>$1,110.60</span>
-            </div>
-            <button class="checkout-btn">Proceed to Checkout →</button>
+            <a class="continue-link" href="../index.html">← Continue Shopping</a>
         </div>
-    </div>
- 
-    <a class="continue-link" href="../index.html">← Continue Shopping</a>
-</div>
- 
-<footer>
-    &copy; 2026 Signal Computer Group
-</footer>
- 
+    </main>
+
+    <footer>
+        &copy; 2026 Signal Computer Group
+    </footer>
 </body>
 </html>
- 
